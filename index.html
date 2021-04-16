@@ -20,14 +20,17 @@
       <div class="search card card-body">
         <h1>Search GitHub Users</h1>
         <p class="lead">Enter a username to fetch a user profile and repos</p>
-        <input
+          <form id="form" >
+            <input
           type="text"
           id="searchUser"
           class="form-control"
           placeholder="GItHub Username"
         />
-        <input type="submit" value="Enter" class="bg-dark" style="padding:10px; color: #fff; border: 0px;">
+        <input type="submit" value="Enter" class="bg-dark w-100" style="padding:10px; color: #fff; border: 0px;">
       </div>
+          </form>
+        
       <br />
       <div id="profile"></div>
     </div>
@@ -58,18 +61,3 @@
 </html>
 
 
-
-<!-- <div class="card card-body mb-3">
-  <div class="row">
-    <div class="col-md-3">
-      <img src="${user.avartar_url}" alt="avartar" class="img-fluid mb-2">
-      <a href="${user.html_url}"  target="_blank" class="btn btn-primary btn-block">View Profile</a>
-    </div>
-    <div class="col-md-9">
-      <span class="badge badge-primary">Pulic Repos:${user.public_repos} </span>
-      <span class="badge badge-secondary">Pulic Gists: ${user.public_gists}</span>
-      <span class="badge badge-Success">Followers: ${user.followers}</span>
-      <span class="badge badge-info">Following: ${user.following}span>
-    </div>
-  </div>
-</div> -->
